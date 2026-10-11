@@ -1,0 +1,76 @@
+media:
+  input: images
+  output: images
+
+content:
+  - name: portfolio
+    label: Portfolio
+    type: file
+    path: portfolio.json
+    format: json
+    fields:
+      - name: projects
+        label: Projects
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{fields.title}"
+        fields:
+          - name: title
+            label: Game or project name
+            type: string
+            required: true
+
+          - name: description
+            label: Description
+            type: text
+
+          - name: category
+            label: Project type
+            type: select
+            options:
+              values:
+                - Game
+                - Prototype
+                - Game jam
+
+          - name: status
+            label: Status
+            type: select
+            options:
+              values:
+                - In development
+                - Released
+                - Completed prototype
+
+          - name: role
+            label: My role and team size
+            type: string
+
+          - name: contributions
+            label: My contributions
+            type: text
+            description: Write one contribution per line.
+
+          - name: screenshots
+            label: Screenshots
+            type: image
+            list: true
+
+          - name: videos
+            label: YouTube video links
+            type: string
+            list: true
+
+          - name: itch
+            label: itch.io link
+            type: string
+
+          - name: steam
+            label: Steam link
+            type: string
+
+          - name: source
+            label: Source code link
+            type: string
