@@ -42,7 +42,8 @@ content:
               values:
                 - In development
                 - Released
-                - Completed prototype
+                - Prototype
+                - Awaiting release
 
           - name: role
             label: My role and team size
@@ -59,9 +60,17 @@ content:
             list: true
 
           - name: videos
+            label: Upload gameplay videos (MP4)
+            type: file
+            list: true
+            options:
+              extensions: [mp4]
+
+          - name: youtube
             label: YouTube video links
             type: string
             list: true
+            description: Paste full YouTube links. Leave empty if unused.
 
           - name: itch
             label: itch.io link
