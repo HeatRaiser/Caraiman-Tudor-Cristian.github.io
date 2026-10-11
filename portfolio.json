@@ -2,7 +2,7 @@
   "projects": [
     {
       "title": "Cold Shelter",
-      "description": "Cold Shelter is a first-person horror game that takes place in a snow-covered forest. Your car breaks down during a snowstorm, leaving you stranded in the middle of nowhere. Find shelter, explore your surroundings, find help and make your way out of there. Escaping the cold is only the beginning. This game features a linear story, environmental interactions, immersive graphics,\ncreepy atmosphere and AI behaviors.",
+      "description": "Cold Shelter is a first-person horror game that takes place in a snow-covered forest. Your car breaks down during a snowstorm, leaving you stranded in the middle of nowhere. Find shelter, explore your surroundings, find help and make your way out of there. Escaping the cold is only the beginning. This game features a linear story, environmental interactions, immersive graphics,\ncreepy atmosphere and AI behaviors. The game was developed in Unity.",
       "category": "Game",
       "status": "Awaiting release",
       "role": "Solo Developer",
