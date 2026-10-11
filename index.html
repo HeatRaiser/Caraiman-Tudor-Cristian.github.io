@@ -4,11 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-        content="Unity developer portfolio">
+        content="Caraiman Tudor-Cristian — Unity game developer. Games, gameplay systems, and prototypes.">
   <title>Caraiman Tudor-Cristian | Unity Game Developer</title>
 
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       background: #10141c;
@@ -16,39 +17,115 @@
       font-family: system-ui, sans-serif;
       line-height: 1.7;
     }
+
     main {
-      max-width: 960px;
+      max-width: 1100px;
       margin: auto;
       padding: 64px 24px;
     }
+
     header { margin-bottom: 56px; }
-    h1 { font-size: clamp(2rem, 6vw, 3.5rem); line-height: 1.15; }
-    h2, h3 { line-height: 1.3; }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+    }
+
+    h2, h3, h4 { line-height: 1.3; }
+    h3 { margin: 16px 0; font-size: 1.8rem; }
+    h4 { margin-bottom: 12px; }
     p, li { color: #bfcadd; }
+    li + li { margin-top: 8px; }
+
     a { color: #89c5ff; }
-    a:focus-visible { outline: 2px solid; outline-offset: 4px; }
+    a:hover { color: #c2e1ff; }
+    a:focus-visible {
+      outline: 2px solid #89c5ff;
+      outline-offset: 5px;
+    }
+
+    nav, .links, .badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
     article {
       background: #1a2230;
       border: 1px solid #344057;
       border-radius: 16px;
-      padding: 24px;
+      padding: clamp(20px, 4vw, 36px);
       margin: 24px 0;
     }
-    img {
-      display: block;
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+
+    .tag { color: #89c5ff; font-size: .9rem; }
+
+    .badge {
+      border: 1px solid #43516b;
+      border-radius: 999px;
+      padding: 4px 12px;
+      font-size: .8rem;
+      color: #cbdcf1;
     }
-    iframe {
+
+    .description { white-space: pre-line; }
+    .role { color: #89c5ff; }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 12px;
+      margin-top: 20px;
+    }
+
+    .gallery a {
+      display: block;
+      overflow: hidden;
+      border-radius: 10px;
+      background: #10141c;
+    }
+
+    .gallery img {
       display: block;
       width: 100%;
       aspect-ratio: 16 / 9;
-      border: 0;
-      border-radius: 10px;
+      object-fit: cover;
+      transition: transform .2s;
     }
-    .tag { color: #89c5ff; font-size: .9rem; }
+
+    .gallery a:hover img { transform: scale(1.025); }
+
+    video {
+      display: block;
+      width: 100%;
+      max-height: 620px;
+      background: #090c12;
+      border-radius: 10px;
+      margin-top: 16px;
+    }
+
+    .links { margin-top: 24px; }
+
+    .button {
+      display: inline-block;
+      padding: 9px 16px;
+      border: 1px solid #43516b;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+
+    .button:hover { background: #253248; }
     footer { margin-top: 56px; }
+
+    @media (max-width: 600px) {
+      main { padding: 40px 16px; }
+      .gallery { grid-template-columns: 1fr; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .gallery img { transition: none; }
+    }
   </style>
 </head>
 
@@ -62,49 +139,195 @@
         I build games, gameplay mechanics, and interactive prototypes.
       </p>
       <nav aria-label="Contact and profiles">
-        <a href="https://heatdev.itch.io/">itch.io</a> ·
+        <a href="https://heatdev.itch.io/">itch.io</a>
         <a href="mailto:caraimantudor458@gmail.com">Email me</a>
       </nav>
     </header>
 
-    <section aria-labelledby="projects">
-      <h2 id="projects">Selected projects</h2>
-
-      <article>
-        <p class="tag">FEATURED GAME · IN DEVELOPMENT</p>
-        <h3>Your Game Name</h3>
-        <p>Describe the game and what the player does in one or two sentences.</p>
-
-        <!-- Add a screenshot or video here. -->
-
-        <h4>My contribution</h4>
-        <ul>
-          <li>Describe a system you implemented.</li>
-          <li>Explain a technical challenge you solved.</li>
-          <li>State your role and whether you worked solo or in a team.</li>
-        </ul>
-      </article>
-
-      <article>
-        <p class="tag">PROTOTYPE</p>
-        <h3>Your Prototype Name</h3>
-        <p>Explain the mechanic this prototype demonstrates.</p>
-
-        <!-- Add a screenshot or video here. -->
-
-        <h4>Technical highlights</h4>
-        <ul>
-          <li>Describe how the mechanic works.</li>
-          <li>Explain an implementation decision or improvement.</li>
-        </ul>
-      </article>
+    <section aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Selected projects</h2>
+      <p id="load-status" role="status">Loading projects…</p>
+      <div id="projects"></div>
+      <noscript>Please enable JavaScript to view the projects.</noscript>
     </section>
 
     <footer>
-      <p>Interested in working together?
+      <p>
+        Interested in working together?
         <a href="mailto:caraimantudor458@gmail.com">Get in touch.</a>
       </p>
     </footer>
   </main>
+
+  <script>
+    const container = document.getElementById("projects");
+    const status = document.getElementById("load-status");
+
+    function element(tag, text, className) {
+      const node = document.createElement(tag);
+      if (text) node.textContent = text;
+      if (className) node.className = className;
+      return node;
+    }
+
+    function items(value) {
+      if (Array.isArray(value)) {
+        return value.filter(item =>
+          typeof item === "string" && item.trim()
+        );
+      }
+      return typeof value === "string" && value.trim() ? [value] : [];
+    }
+
+    function safeUrl(value) {
+      if (typeof value !== "string" || !value.trim()) return null;
+      try {
+        const url = new URL(value.trim(), document.baseURI);
+        return ["https:", "http:"].includes(url.protocol) ? url.href : null;
+      } catch {
+        return null;
+      }
+    }
+
+    function addLink(parent, label, value) {
+      const url = safeUrl(value);
+      if (!url) return;
+      const link = element("a", label, "button");
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      parent.append(link);
+    }
+
+    function renderProject(project) {
+      const card = element("article");
+      const title = project.title || "Untitled project";
+      const badges = element("div", "", "badges");
+
+      for (const value of [project.category, project.status]) {
+        if (value) badges.append(element("span", value, "badge"));
+      }
+
+      card.append(badges, element("h3", title));
+
+      if (project.role) {
+        card.append(element("p", project.role, "role"));
+      }
+
+      if (project.description) {
+        card.append(element("p", project.description, "description"));
+      }
+
+      const gallery = element("div", "", "gallery");
+
+      items(project.screenshots).forEach((path, index) => {
+        const url = safeUrl(path);
+        if (!url) return;
+
+        const link = element("a");
+        link.href = url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.setAttribute(
+          "aria-label",
+          `Open ${title} screenshot ${index + 1} at full size`
+        );
+
+        const image = element("img");
+        image.src = url;
+        image.alt = `${title} — screenshot ${index + 1}`;
+        image.loading = "lazy";
+        image.decoding = "async";
+
+        link.append(image);
+        gallery.append(link);
+      });
+
+      if (gallery.childElementCount) card.append(gallery);
+
+      const videos = items(project.videos)
+        .map(safeUrl)
+        .filter(Boolean);
+
+      if (videos.length) {
+        card.append(element("h4", "Gameplay videos"));
+
+        videos.forEach((url, index) => {
+          const video = element("video");
+          video.src = url;
+          video.controls = true;
+          video.playsInline = true;
+          video.preload = "metadata";
+          video.setAttribute(
+            "aria-label",
+            `${title} — gameplay video ${index + 1}`
+          );
+          card.append(video);
+        });
+      }
+
+      const contributions = items(project.contributions)
+        .flatMap(text => text.split(/\r?\n/))
+        .map(line => line.replace(/^\s*[-*•]\s*/, "").trim())
+        .filter(Boolean);
+
+      if (contributions.length) {
+        card.append(element("h4", "My contribution"));
+        const list = element("ul");
+        contributions.forEach(text => list.append(element("li", text)));
+        card.append(list);
+      }
+
+      const links = element("div", "", "links");
+      const youtube = items(project.youtube);
+
+      youtube.forEach((url, index) => {
+        const label = youtube.length > 1
+          ? `Watch on YouTube (${index + 1})`
+          : "Watch on YouTube";
+        addLink(links, label, url);
+      });
+
+      addLink(links, "View on itch.io", project.itch);
+      addLink(links, "View on Steam", project.steam);
+      addLink(links, "View source code", project.source);
+
+      if (links.childElementCount) card.append(links);
+      return card;
+    }
+
+    async function loadProjects() {
+      try {
+        const response = await fetch("./portfolio.json", {
+          cache: "no-store"
+        });
+
+        if (!response.ok) {
+          throw new Error(`Could not load portfolio.json: ${response.status}`);
+        }
+
+        const data = await response.json();
+
+        if (!Array.isArray(data.projects)) {
+          throw new Error("portfolio.json must contain a projects array.");
+        }
+
+        const projects = data.projects.filter(project =>
+          project && typeof project === "object"
+        );
+
+        container.replaceChildren(...projects.map(renderProject));
+        status.textContent = projects.length
+          ? ""
+          : "Projects coming soon.";
+      } catch (error) {
+        status.textContent =
+          "Projects could not be loaded. Please refresh or visit my itch.io page.";
+        console.error(error);
+      }
+    }
+
+    loadProjects();
+  </script>
 </body>
 </html>
