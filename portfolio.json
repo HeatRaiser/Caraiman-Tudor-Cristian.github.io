@@ -119,6 +119,13 @@
       "videos": [
         "images/2026-10-12 16-14-10.mp4"
       ]
+    },
+    {
+      "title": "Turn Based Strategy Game",
+      "description": "A 3D turn-based strategy prototype where you command a squad in grid-based battles against enemy AI. Spend each unit’s action points to move, attack, or interact with the environment, then end your turn and face the enemy’s response. Use positioning and tactical abilities to defeat the opposing team.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented grid-based movement and pathfinding, unit management, action points, turn sequencing, and an action system for combat and world interactions."
     }
   ]
 }
