@@ -142,7 +142,8 @@
     },
     {
       "title": "FlapJacker",
-      "description": "A 2.5D pancake-cooking game where you control a pan, pour batter to determine pancake size, and cook both sides by flipping it with mouse gestures. Send pancakes higher for more airtime and a higher score while managing their cooking."
+      "description": "A 2.5D pancake-cooking game where you control a pan, pour batter to determine pancake size, and cook both sides by flipping it with mouse gestures. Send pancakes higher for more airtime and a higher score while managing their cooking.",
+      "contributions": "- Implemented pan controls and physics-based pancake flipping, using mouse movement direction and speed to determine rotation and applied force\n- Developed batter pouring and pancake sizing based on the amount poured\n- Implemented cooking logic that tracks each side of the pancake\n- Created an airtime-based scoring system"
     }
   ]
 }
