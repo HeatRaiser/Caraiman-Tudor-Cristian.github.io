@@ -98,6 +98,17 @@
         "images/2026-10-12 15-33-11.mp4"
       ],
       "itch": "https://darkwingstudio.itch.io/race-to-pluto"
+    },
+    {
+      "title": "Circular Mayhem",
+      "description": "An arcade 2D game where you are rotating around your planet, trying to avoid all the hazards that are coming to get you. Try to see how long you can survive and set the best high-score that you can. Also don't forget to collect coins to unlock new worlds that have increased difficulty so you can challenge yourself better.",
+      "category": "Game",
+      "status": "Released",
+      "contributions": "- Implemented player controls, varied hazards, coin collection, coin-based level unlocks, and high-score tracking",
+      "videos": [
+        "images/2026-10-12 15-46-00.mp4"
+      ],
+      "itch": "https://heatdev.itch.io/circular-mayhem"
     }
   ]
 }
