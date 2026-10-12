@@ -72,6 +72,26 @@
       "itch": "https://mololo.itch.io/isle-of-the-forsaken"
     },
     {
+      "title": "Battle Tanks",
+      "description": "A 2D multiplayer tank combat prototype featuring deathmatch, where players collect coins to replenish ammunition and keep firing. Includes a minimap, leaderboard, and lobbies with join-by-code functionality.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented multiplayer gameplay using Unity Netcode for GameObjects, with host and client support\n- Implemented lobby creation and joining through session codes\n- Developed tank combat, coin collection, and an ammunition system tied to collected coins\n- Implemented a minimap and leaderboard",
+      "videos": [
+        "images/2026-10-12 16-54-30.mp4"
+      ]
+    },
+    {
+      "title": "Turn Based Strategy Game",
+      "description": "A 3D turn-based strategy prototype where you command a squad in grid-based battles against enemy AI. Spend each unit’s action points to move, attack, or interact with the environment, then end your turn and face the enemy’s response. Use positioning and tactical abilities to defeat the opposing team.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented grid-based movement and pathfinding, unit management, action points, turn sequencing, and an action system for combat and world interactions.",
+      "videos": [
+        "images/2026-10-12 16-32-43.mp4"
+      ]
+    },
+    {
       "title": "Whispers from the past",
       "description": "Whispers from the past is a first-person, low-poly horror game follows the story of a broken father that did something horrible.",
       "category": "Game jam",
@@ -84,16 +104,6 @@
         "images/RnagYI-2.png"
       ],
       "itch": "https://heatdev.itch.io/whispers-from-the-past"
-    },
-    {
-      "title": "Turn Based Strategy Game",
-      "description": "A 3D turn-based strategy prototype where you command a squad in grid-based battles against enemy AI. Spend each unit’s action points to move, attack, or interact with the environment, then end your turn and face the enemy’s response. Use positioning and tactical abilities to defeat the opposing team.",
-      "category": "Game",
-      "status": "Prototype",
-      "contributions": "- Implemented grid-based movement and pathfinding, unit management, action points, turn sequencing, and an action system for combat and world interactions.",
-      "videos": [
-        "images/2026-10-12 16-32-43.mp4"
-      ]
     },
     {
       "title": "Shut The Box",
@@ -129,16 +139,6 @@
         "images/2026-10-12 15-46-00.mp4"
       ],
       "itch": "https://heatdev.itch.io/circular-mayhem"
-    },
-    {
-      "title": "Battle Tanks",
-      "description": "A 2D multiplayer tank combat prototype featuring deathmatch, where players collect coins to replenish ammunition and keep firing. Includes a minimap, leaderboard, and lobbies with join-by-code functionality.",
-      "category": "Game",
-      "status": "Prototype",
-      "contributions": "- Implemented multiplayer gameplay using Unity Netcode for GameObjects, with host and client support\n- Implemented lobby creation and joining through session codes\n- Developed tank combat, coin collection, and an ammunition system tied to collected coins\n- Implemented a minimap and leaderboard",
-      "videos": [
-        "images/2026-10-12 16-54-30.mp4"
-      ]
     },
     {
       "title": "FlapJacker",
