@@ -40,6 +40,17 @@
       "videos": [
         "images/2026-10-12 14-04-08.mp4"
       ]
+    },
+    {
+      "title": "Shut The Box",
+      "description": "A prototype inspired by the board game Shut the Box, featuring numbered tiles from 1 to 12. Roll the dice and close any combination of tiles that adds up to the total, aiming to close them all. A mouse-driven dice throw lets you drag to set the direction and release to roll, with longer drags adding more spin and power.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented mouse-driven dice throwing, dice result detection, tile-selection validation, and scoring logic.",
+      "screenshots": [
+        "images/Capture-1.png",
+        "images/Capture1.png"
+      ]
     }
   ]
 }
