@@ -139,6 +139,10 @@
       "videos": [
         "images/2026-10-12 16-54-30.mp4"
       ]
+    },
+    {
+      "title": "FlapJacker",
+      "description": "A 2.5D pancake-cooking game where you control a pan, pour batter to determine pancake size, and cook both sides by flipping it with mouse gestures. Send pancakes higher for more airtime and a higher score while managing their cooking."
     }
   ]
 }
