@@ -90,6 +90,9 @@
       "category": "Game",
       "status": "Prototype",
       "contributions": "- Implemented grid-based movement and pathfinding, unit management, action points, turn sequencing, and an action system for combat and world interactions\n- Implemented enemy AI that scores available actions and selects the highest-rated option each turn\n- Implemented ragdoll functionality when units die and breakable crates",
+      "screenshots": [
+        "images/Capture-4.png"
+      ],
       "videos": [
         "images/2026-10-12 16-32-43.mp4"
       ]
