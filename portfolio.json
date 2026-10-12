@@ -157,7 +157,24 @@
       "website": "https://www.playcattywampus.com/"
     },
     {
-      "title": "Dino Run 2"
+      "title": "Dino Run 2",
+      "description": "Dino Run 2 is a prehistoric multiplayer platformer where players customize their dinosaurs and race together to escape extinction. It also features a sandbox mode where players can build, experiment, and explore with friends.\n",
+      "category": "Game",
+      "status": "In development",
+      "contributions": "- Implemented an emote system combining character animations with static and animated icon expressions displayed above the dinosaur\n- Extended dinosaur customization with hats, eye colors, patterns, and a wardrobe for saving outfits\n- Implemented network synchronization for emotes and character customization across multiplayer sessions\n- Extended dinosaur customization to support separate layers for body parts, including feet, arms, body, tail and head\n- Developed a control-rebinding system supporting input combinations of up to three keys or buttons\n- Integrated UI assets from the art team, matching the project’s visual and interaction standards",
+      "screenshots": [
+        "images/Capture-6.png",
+        "images/Capture1-2.png",
+        "images/Capture2-1.png",
+        "images/Capture3-1.png",
+        "images/Capture4.png"
+      ],
+      "youtube": [
+        "https://www.youtube.com/watch?v=xkn1F8LPeGU"
+      ],
+      "steam": "https://store.steampowered.com/app/2590330/Dino_Run_2/",
+      "group": "Professional",
+      "website": "https://dinorun2.com/"
     }
   ]
 }
