@@ -86,6 +86,16 @@
       "itch": "https://heatdev.itch.io/whispers-from-the-past"
     },
     {
+      "title": "Turn Based Strategy Game",
+      "description": "A 3D turn-based strategy prototype where you command a squad in grid-based battles against enemy AI. Spend each unit’s action points to move, attack, or interact with the environment, then end your turn and face the enemy’s response. Use positioning and tactical abilities to defeat the opposing team.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented grid-based movement and pathfinding, unit management, action points, turn sequencing, and an action system for combat and world interactions.",
+      "videos": [
+        "images/2026-10-12 16-32-43.mp4"
+      ]
+    },
+    {
       "title": "Shut The Box",
       "description": "A 3D prototype inspired by the board game Shut the Box, featuring numbered tiles from 1 to 12. Roll the dice and close any combination of tiles that adds up to the total, aiming to close them all. A mouse-driven dice throw lets you drag to set the direction and release to roll, with longer drags adding more spin and power.",
       "category": "Game",
@@ -100,17 +110,6 @@
       ]
     },
     {
-      "title": "Circular Mayhem",
-      "description": "An arcade 2D game where you are rotating around your planet, trying to avoid all the hazards that are coming to get you. Try to see how long you can survive and set the best high-score that you can. Also don't forget to collect coins to unlock new worlds that have increased difficulty so you can challenge yourself better.",
-      "category": "Game",
-      "status": "Released",
-      "contributions": "- Implemented player controls, varied hazards, coin collection, coin-based level unlocks, and high-score tracking",
-      "videos": [
-        "images/2026-10-12 15-46-00.mp4"
-      ],
-      "itch": "https://heatdev.itch.io/circular-mayhem"
-    },
-    {
       "title": "Farming Game",
       "description": "A pixel-art farming prototype where you till soil, plant seeds, and water crops on a tile-based grid. A day–night cycle and daily crop growth create a simple routine of tending your farm and resting for the next day.",
       "category": "Game",
@@ -121,14 +120,15 @@
       ]
     },
     {
-      "title": "Turn Based Strategy Game",
-      "description": "A 3D turn-based strategy prototype where you command a squad in grid-based battles against enemy AI. Spend each unit’s action points to move, attack, or interact with the environment, then end your turn and face the enemy’s response. Use positioning and tactical abilities to defeat the opposing team.",
+      "title": "Circular Mayhem",
+      "description": "An arcade 2D game where you are rotating around your planet, trying to avoid all the hazards that are coming to get you. Try to see how long you can survive and set the best high-score that you can. Also don't forget to collect coins to unlock new worlds that have increased difficulty so you can challenge yourself better.",
       "category": "Game",
-      "status": "Prototype",
-      "contributions": "- Implemented grid-based movement and pathfinding, unit management, action points, turn sequencing, and an action system for combat and world interactions.",
+      "status": "Released",
+      "contributions": "- Implemented player controls, varied hazards, coin collection, coin-based level unlocks, and high-score tracking",
       "videos": [
-        "images/2026-10-12 16-32-43.mp4"
-      ]
+        "images/2026-10-12 15-46-00.mp4"
+      ],
+      "itch": "https://heatdev.itch.io/circular-mayhem"
     }
   ]
 }
