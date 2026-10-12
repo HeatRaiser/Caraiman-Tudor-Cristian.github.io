@@ -42,18 +42,20 @@
       ]
     },
     {
-      "title": "Shut The Box",
-      "description": "A 3D prototype inspired by the board game Shut the Box, featuring numbered tiles from 1 to 12. Roll the dice and close any combination of tiles that adds up to the total, aiming to close them all. A mouse-driven dice throw lets you drag to set the direction and release to roll, with longer drags adding more spin and power.",
+      "title": "Race to Pluto",
+      "description": "Race to Pluto is a 2D speedrunning platformer where you race through courses from Earth to Pluto, dodging enemies and obstacles while collecting fuel to reach your next destination. Each world has its own gravity, changing how you move and approach every course.",
       "category": "Game",
-      "status": "Prototype",
-      "contributions": "- Implemented mouse-driven dice throwing, dice result detection, tile-selection validation, and scoring logic.",
+      "status": "Released",
+      "contributions": "- Implemented enemy AI, respawn logic, a run timer, fuel collection requirements, planet-specific gravity and launchpads\n- Designed the levels and created particle effects",
       "screenshots": [
-        "images/Capture-1.png",
-        "images/Capture1.png"
+        "images/APJhKD.jpg",
+        "images/Hnp4v9.jpg",
+        "images/ihflPM.jpg"
       ],
       "videos": [
-        "images/2026-10-12 14-53-52.mp4"
-      ]
+        "images/2026-10-12 15-33-11.mp4"
+      ],
+      "itch": "https://darkwingstudio.itch.io/race-to-pluto"
     },
     {
       "title": "Isle of the Forsaken",
@@ -84,20 +86,18 @@
       "itch": "https://heatdev.itch.io/whispers-from-the-past"
     },
     {
-      "title": "Race to Pluto",
-      "description": "Race to Pluto is a 2D speedrunning platformer where you race through courses from Earth to Pluto, dodging enemies and obstacles while collecting fuel to reach your next destination. Each world has its own gravity, changing how you move and approach every course.",
+      "title": "Shut The Box",
+      "description": "A 3D prototype inspired by the board game Shut the Box, featuring numbered tiles from 1 to 12. Roll the dice and close any combination of tiles that adds up to the total, aiming to close them all. A mouse-driven dice throw lets you drag to set the direction and release to roll, with longer drags adding more spin and power.",
       "category": "Game",
-      "status": "Released",
-      "contributions": "- Implemented enemy AI, respawn logic, a run timer, fuel collection requirements, planet-specific gravity and launchpads\n- Designed the levels and created particle effects",
+      "status": "Prototype",
+      "contributions": "- Implemented mouse-driven dice throwing, dice result detection, tile-selection validation, and scoring logic.",
       "screenshots": [
-        "images/APJhKD.jpg",
-        "images/Hnp4v9.jpg",
-        "images/ihflPM.jpg"
+        "images/Capture-1.png",
+        "images/Capture1.png"
       ],
       "videos": [
-        "images/2026-10-12 15-33-11.mp4"
-      ],
-      "itch": "https://darkwingstudio.itch.io/race-to-pluto"
+        "images/2026-10-12 14-53-52.mp4"
+      ]
     },
     {
       "title": "Circular Mayhem",
