@@ -76,6 +76,7 @@
       "status": "Released",
       "contributions": "- Implemented environmental interactions, jumpscares, objectives, dialogues, footsteps system and AI voiceovers\n- Developed enemy AI with roaming, player detection, pursuit, and attack states\n- Designed the level layout and established its atmosphere through lighting and environmental details.",
       "screenshots": [
+        "images/Main.png",
         "images/T_XCo3-1.png",
         "images/KuUFVW-1.png",
         "images/iDRRjq-1.png",
