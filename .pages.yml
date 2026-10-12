@@ -83,3 +83,15 @@ content:
           - name: source
             label: Source code link
             type: string
+            
+          - name: group
+            label: Portfolio section
+            type: select
+            options:
+              values:
+                - Personal
+                - Professional
+          - name: website
+            label: Official website
+            type: string
+            description: Paste the full URL, including https://.
