@@ -26,7 +26,7 @@
     {
       "title": "Bowling Madness",
       "description": "Bowling Madness is a 3D isometric endless platformer where you guide a bowling ball through a generated obstacle course. Move your mouse to steer and control the force applied to the ball—the farther the cursor, the greater the force. Navigate hazards, use launchers and power-ups, and knock down pins at the end of each section to gain extra time. See how far you can get before the timer runs out.",
-      "category": "Prototype",
+      "category": "Game",
       "status": "Prototype",
       "role": "Solo Developer",
       "contributions": "- Implemented a mouse-driven physics controller, timer, checkpoints, respawning, power-ups, and interactive obstacles with effects such as stunning, knockback, and launching\n- Used object pooling to recycle course sections, enabling endless generation\n- Designed all the course sections\n- Created all the assets used in this prototype using Blender",
