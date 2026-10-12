@@ -47,6 +47,9 @@
       "category": "Game",
       "status": "Prototype",
       "contributions": "- Implemented multiplayer gameplay using Unity Netcode for GameObjects, with host and client support\n- Implemented lobby creation and joining through session codes\n- Developed tank combat, coin collection, and an ammunition system tied to collected coins\n- Implemented a minimap and leaderboard",
+      "screenshots": [
+        "images/Capture-3.png"
+      ],
       "videos": [
         "images/2026-10-12 16-54-30.mp4"
       ]
