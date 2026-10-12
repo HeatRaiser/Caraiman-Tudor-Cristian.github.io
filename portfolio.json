@@ -92,6 +92,20 @@
       ]
     },
     {
+      "title": "Whispers from the past",
+      "description": "Whispers from the past is a first-person, low-poly horror game follows the story of a broken father that did something horrible.",
+      "category": "Game jam",
+      "status": "Released",
+      "contributions": "- Implemented environmental interactions, objectives, dialogue and object animations\n- Designed the level",
+      "screenshots": [
+        "images/oUynUq-1.png",
+        "images/fYz8h+-1.png",
+        "images/Z_IdL2-1.png",
+        "images/RnagYI-2.png"
+      ],
+      "itch": "https://heatdev.itch.io/whispers-from-the-past"
+    },
+    {
       "title": "Shut The Box",
       "description": "A 3D prototype inspired by the board game Shut the Box, featuring numbered tiles from 1 to 12. Roll the dice and close any combination of tiles that adds up to the total, aiming to close them all. A mouse-driven dice throw lets you drag to set the direction and release to roll, with longer drags adding more spin and power.",
       "category": "Game",
@@ -114,20 +128,6 @@
       "videos": [
         "images/2026-10-12 17-43-35.mp4"
       ]
-    },
-    {
-      "title": "Whispers from the past",
-      "description": "Whispers from the past is a first-person, low-poly horror game follows the story of a broken father that did something horrible.",
-      "category": "Game jam",
-      "status": "Released",
-      "contributions": "- Implemented environmental interactions, objectives, dialogue and object animations\n- Designed the level",
-      "screenshots": [
-        "images/oUynUq-1.png",
-        "images/fYz8h+-1.png",
-        "images/Z_IdL2-1.png",
-        "images/RnagYI-2.png"
-      ],
-      "itch": "https://heatdev.itch.io/whispers-from-the-past"
     }
   ]
 }
