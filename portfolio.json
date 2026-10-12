@@ -42,6 +42,16 @@
       ]
     },
     {
+      "title": "Battle Tanks",
+      "description": "A 2D multiplayer tank combat prototype featuring deathmatch, where players collect coins to replenish ammunition and keep firing. Includes a minimap, leaderboard, and lobbies with join-by-code functionality.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented multiplayer gameplay using Unity Netcode for GameObjects, with host and client support\n- Implemented lobby creation and joining through session codes\n- Developed tank combat, coin collection, and an ammunition system tied to collected coins\n- Implemented a minimap and leaderboard",
+      "videos": [
+        "images/2026-10-12 16-54-30.mp4"
+      ]
+    },
+    {
       "title": "Race to Pluto",
       "description": "Race to Pluto is a 2D speedrunning platformer where you race through courses from Earth to Pluto, dodging enemies and obstacles while collecting fuel to reach your next destination. Each world has its own gravity, changing how you move and approach every course.",
       "category": "Game",
@@ -72,16 +82,6 @@
       "itch": "https://mololo.itch.io/isle-of-the-forsaken"
     },
     {
-      "title": "Battle Tanks",
-      "description": "A 2D multiplayer tank combat prototype featuring deathmatch, where players collect coins to replenish ammunition and keep firing. Includes a minimap, leaderboard, and lobbies with join-by-code functionality.",
-      "category": "Game",
-      "status": "Prototype",
-      "contributions": "- Implemented multiplayer gameplay using Unity Netcode for GameObjects, with host and client support\n- Implemented lobby creation and joining through session codes\n- Developed tank combat, coin collection, and an ammunition system tied to collected coins\n- Implemented a minimap and leaderboard",
-      "videos": [
-        "images/2026-10-12 16-54-30.mp4"
-      ]
-    },
-    {
       "title": "Turn Based Strategy Game",
       "description": "A 3D turn-based strategy prototype where you command a squad in grid-based battles against enemy AI. Spend each unit’s action points to move, attack, or interact with the environment, then end your turn and face the enemy’s response. Use positioning and tactical abilities to defeat the opposing team.",
       "category": "Game",
@@ -89,30 +89,6 @@
       "contributions": "- Implemented grid-based movement and pathfinding, unit management, action points, turn sequencing, and an action system for combat and world interactions\n- Implemented ragdoll functionality when units die and breakable crates",
       "videos": [
         "images/2026-10-12 16-32-43.mp4"
-      ]
-    },
-    {
-      "title": "Whispers from the past",
-      "description": "Whispers from the past is a first-person, low-poly horror game follows the story of a broken father that did something horrible.",
-      "category": "Game jam",
-      "status": "Released",
-      "contributions": "- Implemented environmental interactions, objectives, dialogue and object animations\n- Designed the level",
-      "screenshots": [
-        "images/oUynUq-1.png",
-        "images/fYz8h+-1.png",
-        "images/Z_IdL2-1.png",
-        "images/RnagYI-2.png"
-      ],
-      "itch": "https://heatdev.itch.io/whispers-from-the-past"
-    },
-    {
-      "title": "RPG Sandbox",
-      "description": "An RPG prototype featuring point-and-click movement, collectible melee and ranged weapons, and automatic attacks based on weapon range. Explore an area populated by roaming enemies that pursue you when spotted.",
-      "category": "Game",
-      "status": "Prototype",
-      "contributions": "- Implemented point-and-click movement using Unity NavMesh\n- Developed enemy AI with roaming, player detection, pursuit, and attack states\n- Implemented weapon pickups and melee and ranged combat, with automatic attacks based on weapon range\n- Created a health and damage system",
-      "videos": [
-        "images/2026-10-12 17-43-35.mp4"
       ]
     },
     {
@@ -128,6 +104,30 @@
       "videos": [
         "images/2026-10-12 14-53-52.mp4"
       ]
+    },
+    {
+      "title": "RPG Sandbox",
+      "description": "An RPG prototype featuring point-and-click movement, collectible melee and ranged weapons, and automatic attacks based on weapon range. Explore an area populated by roaming enemies that pursue you when spotted.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented point-and-click movement using Unity NavMesh\n- Developed enemy AI with roaming, player detection, pursuit, and attack states\n- Implemented weapon pickups and melee and ranged combat, with automatic attacks based on weapon range\n- Created a health and damage system",
+      "videos": [
+        "images/2026-10-12 17-43-35.mp4"
+      ]
+    },
+    {
+      "title": "Whispers from the past",
+      "description": "Whispers from the past is a first-person, low-poly horror game follows the story of a broken father that did something horrible.",
+      "category": "Game jam",
+      "status": "Released",
+      "contributions": "- Implemented environmental interactions, objectives, dialogue and object animations\n- Designed the level",
+      "screenshots": [
+        "images/oUynUq-1.png",
+        "images/fYz8h+-1.png",
+        "images/Z_IdL2-1.png",
+        "images/RnagYI-2.png"
+      ],
+      "itch": "https://heatdev.itch.io/whispers-from-the-past"
     }
   ]
 }
