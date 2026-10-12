@@ -106,6 +106,16 @@
       "itch": "https://heatdev.itch.io/whispers-from-the-past"
     },
     {
+      "title": "RPG Sandbox",
+      "description": "An RPG prototype featuring point-and-click movement, collectible melee and ranged weapons, and automatic attacks based on weapon range. Explore an area populated by roaming enemies that pursue you when spotted.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented point-and-click movement using Unity NavMesh\n- Developed enemy AI with roaming, player detection, pursuit, and attack states\n- Implemented weapon pickups and melee and ranged combat, with automatic attacks based on weapon range\n- Created a health and damage system",
+      "videos": [
+        "images/2026-10-12 17-43-35.mp4"
+      ]
+    },
+    {
       "title": "Shut The Box",
       "description": "A 3D prototype inspired by the board game Shut the Box, featuring numbered tiles from 1 to 12. Roll the dice and close any combination of tiles that adds up to the total, aiming to close them all. A mouse-driven dice throw lets you drag to set the direction and release to roll, with longer drags adding more spin and power.",
       "category": "Game",
@@ -117,16 +127,6 @@
       ],
       "videos": [
         "images/2026-10-12 14-53-52.mp4"
-      ]
-    },
-    {
-      "title": "RPG Sandbox",
-      "description": "An RPG prototype featuring point-and-click movement, collectible melee and ranged weapons, and automatic attacks based on weapon range. Explore an area populated by roaming enemies that pursue you when spotted.",
-      "category": "Game",
-      "status": "Prototype",
-      "contributions": "- Implemented point-and-click movement using Unity NavMesh\n- Developed enemy AI with roaming, player detection, pursuit, and attack states\n- Implemented weapon pickups and melee and ranged combat, with automatic attacks based on weapon range\n- Created a health and damage system",
-      "videos": [
-        "images/2026-10-12 17-43-35.mp4"
       ]
     }
   ]
