@@ -96,7 +96,7 @@
       "description": "Whispers from the past is a first-person, low-poly horror game follows the story of a broken father that did something horrible.",
       "category": "Game jam",
       "status": "Released",
-      "contributions": "- Implemented environmental interactions, objectives, dialogue and objects animations\n- Designed the level",
+      "contributions": "- Implemented environmental interactions, objectives, dialogue and object animations\n- Designed the level",
       "screenshots": [
         "images/oUynUq-1.png",
         "images/fYz8h+-1.png",
@@ -120,6 +120,16 @@
       ]
     },
     {
+      "title": "RPG Sandbox",
+      "description": "An RPG prototype featuring point-and-click movement, collectible melee and ranged weapons, and automatic attacks based on weapon range. Explore an area populated by roaming enemies that pursue you when spotted.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented point-and-click movement using Unity NavMesh\n- Developed enemy AI with roaming, player detection, pursuit, and attack states\n- Implemented weapon pickups and melee and ranged combat, with automatic attacks based on weapon range\n- Created a health and damage system",
+      "videos": [
+        "images/2026-10-12 17-43-35.mp4"
+      ]
+    },
+    {
       "title": "Farming Game",
       "description": "A pixel-art farming prototype where you till soil, plant seeds, and water crops on a tile-based grid. A day–night cycle and daily crop growth create a simple routine of tending your farm and resting for the next day.",
       "category": "Game",
@@ -139,24 +149,6 @@
         "images/2026-10-12 15-46-00.mp4"
       ],
       "itch": "https://heatdev.itch.io/circular-mayhem"
-    },
-    {
-      "title": "FlapJacker",
-      "description": "A 2.5D pancake-cooking game where you control a pan, pour batter to determine pancake size, and cook both sides by flipping it with mouse gestures. Send pancakes higher for more airtime and a higher score while managing their cooking.",
-      "contributions": "- Implemented pan controls and physics-based pancake flipping, using mouse movement direction and speed to determine rotation and applied force\n- Developed batter pouring and pancake sizing based on the amount poured\n- Implemented cooking logic that tracks each side of the pancake\n- Created an airtime-based scoring system",
-      "videos": [
-        "images/2026-10-12 17-20-29.mp4"
-      ]
-    },
-    {
-      "title": "RPG Sandbox",
-      "description": "An RPG prototype featuring point-and-click movement, collectible melee and ranged weapons, and automatic attacks based on weapon range. Explore an area populated by roaming enemies that pursue you when spotted.",
-      "category": "Game",
-      "status": "Prototype",
-      "contributions": "- Implemented point-and-click movement using Unity NavMesh\n- Developed enemy AI with roaming, player detection, pursuit, and attack states\n- Implemented weapon pickups and melee and ranged combat, with automatic attacks based on weapon range\n- Created a health and damage system",
-      "videos": [
-        "images/2026-10-12 17-43-35.mp4"
-      ]
     }
   ]
 }
