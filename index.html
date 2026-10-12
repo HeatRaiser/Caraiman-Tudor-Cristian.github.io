@@ -4,86 +4,212 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description"
-        content="Caraiman Tudor-Cristian — Unity game developer. Games, gameplay systems, and prototypes.">
+        content="Caraiman Tudor-Cristian — Unity developer. Professional work, independent games, and gameplay prototypes.">
   <title>Caraiman Tudor-Cristian | Unity Game Developer</title>
 
   <style>
-    * { box-sizing: border-box; }
+    :root {
+      color-scheme: dark;
+      --bg: #10141c;
+      --panel: #19212e;
+      --border: #344057;
+      --text: #edf2fa;
+      --muted: #bfcadd;
+      --accent: #89c5ff;
+    }
 
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      background: #10141c;
-      color: #edf2fa;
+      background: var(--bg);
+      color: var(--text);
       font-family: system-ui, sans-serif;
       line-height: 1.7;
     }
 
     main {
-      max-width: 1100px;
+      max-width: 1200px;
       margin: auto;
-      padding: 64px 24px;
+      padding: 56px 24px;
     }
 
-    header { margin-bottom: 56px; }
+    header {
+      padding-bottom: 40px;
+      border-bottom: 1px solid var(--border);
+    }
 
     h1 {
-      font-size: clamp(2rem, 6vw, 3.5rem);
-      line-height: 1.15;
-      letter-spacing: -0.03em;
+      margin: 12px 0 20px;
+      font-size: clamp(2rem, 5vw, 3.7rem);
+      letter-spacing: -.04em;
+      line-height: 1.12;
     }
 
     h2, h3, h4 { line-height: 1.3; }
-    h3 { margin: 16px 0; font-size: 1.8rem; }
-    h4 { margin-bottom: 12px; }
-    p, li { color: #bfcadd; }
+    h2 { margin: 0; font-size: 1.7rem; }
+    h3 { margin: 12px 0; font-size: 1.35rem; }
+    h4 { margin: 28px 0 12px; font-size: 1.1rem; }
+    p, li { color: var(--muted); }
     li + li { margin-top: 8px; }
+    a { color: var(--accent); }
+    a:hover { color: #d4eaff; }
 
-    a { color: #89c5ff; }
-    a:hover { color: #c2e1ff; }
-    a:focus-visible {
-      outline: 2px solid #89c5ff;
+    a:focus-visible, summary:focus-visible {
+      outline: 3px solid var(--accent);
       outline-offset: 5px;
     }
 
+    .eyebrow {
+      margin: 0;
+      color: var(--accent);
+      font-size: .78rem;
+      font-weight: 650;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+    }
+
+    .intro { max-width: 650px; }
     nav, .links, .badges {
       display: flex;
       flex-wrap: wrap;
-      gap: 12px;
+      gap: 10px;
     }
 
-    article {
-      background: #1a2230;
-      border: 1px solid #344057;
+    nav { margin-top: 24px; }
+
+    .button {
+      display: inline-block;
+      padding: 8px 15px;
+      border: 1px solid var(--border);
+      border-radius: 9px;
+      text-decoration: none;
+      font-size: .9rem;
+    }
+
+    .button:hover { background: #26354a; }
+
+    section { margin-top: 44px; }
+    [hidden] { display: none !important; }
+
+    .section-heading {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+
+    .count { color: var(--muted); font-size: .85rem; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 20px;
+      align-items: start;
+    }
+
+    .project {
+      min-width: 0;
+      overflow: hidden;
+      background: var(--panel);
+      border: 1px solid var(--border);
       border-radius: 16px;
-      padding: clamp(20px, 4vw, 36px);
-      margin: 24px 0;
     }
 
-    .tag { color: #89c5ff; font-size: .9rem; }
+    .project:hover { border-color: #627d9f; }
+    .project[open], .project.featured { grid-column: 1 / -1; }
 
+    summary {
+      display: block;
+      cursor: pointer;
+      list-style: none;
+    }
+
+    summary::-webkit-details-marker { display: none; }
+
+    .cover {
+      aspect-ratio: 16 / 9;
+      overflow: hidden;
+      background: linear-gradient(135deg, #20354c, #111a27);
+    }
+
+    .cover img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .placeholder {
+      height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      color: #a7c9ed;
+      font-size: 1.15rem;
+      text-align: center;
+    }
+
+    .card-copy { padding: 22px; }
     .badge {
       border: 1px solid #43516b;
       border-radius: 999px;
-      padding: 4px 12px;
-      font-size: .8rem;
-      color: #cbdcf1;
+      padding: 3px 10px;
+      font-size: .73rem;
+      color: #d1deef;
     }
 
-    .description { white-space: pre-line; }
-    .role { color: #89c5ff; }
+    .excerpt {
+      margin: 0 0 18px;
+      font-size: .93rem;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .toggle-label {
+      color: var(--accent);
+      font-size: .88rem;
+      font-weight: 600;
+    }
+
+    .toggle-label::after { content: "View project +"; }
+    .project[open] .toggle-label::after { content: "Close project −"; }
+
+    .featured > summary, .project[open] > summary {
+      display: grid;
+      grid-template-columns: 1.15fr 1fr;
+      align-items: center;
+    }
+
+    .featured .cover, .project[open] > summary .cover {
+      height: 100%;
+      min-height: 240px;
+    }
+
+    .featured h3 { font-size: 1.85rem; }
+
+    .detail {
+      border-top: 1px solid var(--border);
+      padding: clamp(20px, 4vw, 36px);
+    }
+
+    .description { white-space: pre-line; max-width: 850px; }
+    .role { color: var(--accent); }
+    .links { margin: 22px 0; }
 
     .gallery {
       display: grid;
       grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 12px;
-      margin-top: 20px;
+      gap: 14px;
     }
 
     .gallery a {
       display: block;
-      overflow: hidden;
       border-radius: 10px;
-      background: #10141c;
+      overflow: hidden;
+      background: #0b1018;
     }
 
     .gallery img {
@@ -91,40 +217,38 @@
       width: 100%;
       aspect-ratio: 16 / 9;
       object-fit: cover;
-      transition: transform .2s;
     }
-
-    .gallery a:hover img { transform: scale(1.025); }
 
     video {
       display: block;
       width: 100%;
-      max-height: 620px;
-      background: #090c12;
-      border-radius: 10px;
+      max-height: 600px;
       margin-top: 16px;
+      border-radius: 10px;
+      background: #080b10;
     }
 
-    .links { margin-top: 24px; }
-
-    .button {
-      display: inline-block;
-      padding: 9px 16px;
-      border: 1px solid #43516b;
-      border-radius: 8px;
-      text-decoration: none;
+    footer {
+      margin-top: 56px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
     }
 
-    .button:hover { background: #253248; }
-    footer { margin-top: 56px; }
-
-    @media (max-width: 600px) {
-      main { padding: 40px 16px; }
-      .gallery { grid-template-columns: 1fr; }
+    @media (max-width: 950px) {
+      .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
     }
 
-    @media (prefers-reduced-motion: reduce) {
-      .gallery img { transition: none; }
+    @media (max-width: 640px) {
+      main { padding: 36px 16px; }
+      .grid, .gallery { grid-template-columns: 1fr; }
+      .featured > summary, .project[open] > summary {
+        grid-template-columns: 1fr;
+      }
+      .featured .cover, .project[open] > summary .cover {
+        min-height: 0;
+        height: auto;
+      }
+      .section-heading { align-items: center; }
     }
   </style>
 </head>
@@ -132,36 +256,51 @@
 <body>
   <main>
     <header>
-      <p class="tag">UNITY · C# · GAME DEVELOPMENT</p>
+      <p class="eyebrow">Unity · C# · Game development</p>
       <h1>Caraiman Tudor-Cristian</h1>
-      <p>
+      <p class="intro">
         Unity developer with over 3 years of experience.
         I build games, gameplay mechanics, and interactive prototypes.
       </p>
       <nav aria-label="Contact and profiles">
-        <a href="https://heatdev.itch.io/">itch.io</a>
-        <a href="mailto:caraimantudor458@gmail.com">Email me</a>
+        <a class="button" href="https://heatdev.itch.io/">itch.io</a>
+        <a class="button" href="mailto:caraimantudor458@gmail.com">
+          Get in touch
+        </a>
       </nav>
     </header>
 
-    <section aria-labelledby="projects-heading">
-      <h2 id="projects-heading">Selected projects</h2>
-      <p id="load-status" role="status">Loading projects…</p>
-      <div id="projects"></div>
-      <noscript>Please enable JavaScript to view the projects.</noscript>
+    <p id="load-status" role="status">Loading projects…</p>
+    <noscript>Please enable JavaScript to view the projects.</noscript>
+
+    <section id="professional-section" hidden
+             aria-labelledby="professional-heading">
+      <div class="section-heading">
+        <h2 id="professional-heading">Professional projects</h2>
+        <span class="count" id="professional-count"></span>
+      </div>
+      <div class="grid" id="professional-projects"></div>
+    </section>
+
+    <section id="personal-section" hidden
+             aria-labelledby="personal-heading">
+      <div class="section-heading">
+        <h2 id="personal-heading">Personal projects</h2>
+        <span class="count" id="personal-count"></span>
+      </div>
+      <div class="grid" id="personal-projects"></div>
     </section>
 
     <footer>
       <p>
         Interested in working together?
-        <a href="mailto:caraimantudor458@gmail.com">Get in touch.</a>
+        <a href="mailto:caraimantudor458@gmail.com">Email me.</a>
       </p>
     </footer>
   </main>
 
   <script>
-    const container = document.getElementById("projects");
-    const status = document.getElementById("load-status");
+    const loadStatus = document.getElementById("load-status");
 
     function element(tag, text, className) {
       const node = document.createElement(tag);
@@ -183,7 +322,9 @@
       if (typeof value !== "string" || !value.trim()) return null;
       try {
         const url = new URL(value.trim(), document.baseURI);
-        return ["https:", "http:"].includes(url.protocol) ? url.href : null;
+        return ["https:", "http:"].includes(url.protocol)
+          ? url.href
+          : null;
       } catch {
         return null;
       }
@@ -199,71 +340,20 @@
       parent.append(link);
     }
 
-    function renderProject(project) {
-      const card = element("article");
+    function stopVideos(parent) {
+      parent.querySelectorAll("video").forEach(video => video.pause());
+    }
+
+    function renderDetails(project) {
+      const body = element("div", "", "detail");
       const title = project.title || "Untitled project";
-      const badges = element("div", "", "badges");
-
-      for (const value of [project.category, project.status]) {
-        if (value) badges.append(element("span", value, "badge"));
-      }
-
-      card.append(badges, element("h3", title));
 
       if (project.role) {
-        card.append(element("p", project.role, "role"));
+        body.append(element("p", project.role, "role"));
       }
 
       if (project.description) {
-        card.append(element("p", project.description, "description"));
-      }
-
-      const gallery = element("div", "", "gallery");
-
-      items(project.screenshots).forEach((path, index) => {
-        const url = safeUrl(path);
-        if (!url) return;
-
-        const link = element("a");
-        link.href = url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.setAttribute(
-          "aria-label",
-          `Open ${title} screenshot ${index + 1} at full size`
-        );
-
-        const image = element("img");
-        image.src = url;
-        image.alt = `${title} — screenshot ${index + 1}`;
-        image.loading = "lazy";
-        image.decoding = "async";
-
-        link.append(image);
-        gallery.append(link);
-      });
-
-      if (gallery.childElementCount) card.append(gallery);
-
-      const videos = items(project.videos)
-        .map(safeUrl)
-        .filter(Boolean);
-
-      if (videos.length) {
-        card.append(element("h4", "Gameplay videos"));
-
-        videos.forEach((url, index) => {
-          const video = element("video");
-          video.src = url;
-          video.controls = true;
-          video.playsInline = true;
-          video.preload = "metadata";
-          video.setAttribute(
-            "aria-label",
-            `${title} — gameplay video ${index + 1}`
-          );
-          card.append(video);
-        });
+        body.append(element("p", project.description, "description"));
       }
 
       const contributions = items(project.contributions)
@@ -272,28 +362,179 @@
         .filter(Boolean);
 
       if (contributions.length) {
-        card.append(element("h4", "My contribution"));
+        body.append(element("h4", "My contribution"));
         const list = element("ul");
-        contributions.forEach(text => list.append(element("li", text)));
-        card.append(list);
+        contributions.forEach(text =>
+          list.append(element("li", text))
+        );
+        body.append(list);
       }
 
       const links = element("div", "", "links");
-      const youtube = items(project.youtube);
-
-      youtube.forEach((url, index) => {
-        const label = youtube.length > 1
-          ? `Watch on YouTube (${index + 1})`
-          : "Watch on YouTube";
-        addLink(links, label, url);
-      });
-
-      addLink(links, "View on itch.io", project.itch);
+      addLink(links, "Official website", project.website);
       addLink(links, "View on Steam", project.steam);
+      addLink(links, "View on itch.io", project.itch);
       addLink(links, "View source code", project.source);
 
-      if (links.childElementCount) card.append(links);
+      const youtube = items(project.youtube);
+      youtube.forEach((url, index) => {
+        addLink(
+          links,
+          youtube.length > 1
+            ? `Watch on YouTube (${index + 1})`
+            : "Watch on YouTube",
+          url
+        );
+      });
+
+      if (links.childElementCount) body.append(links);
+
+      const videos = items(project.videos).map(safeUrl).filter(Boolean);
+      if (videos.length) {
+        body.append(element("h4", "Gameplay videos"));
+        videos.forEach((url, index) => {
+          const video = element("video");
+          video.src = url;
+          video.controls = true;
+          video.playsInline = true;
+          video.preload = "none";
+          video.setAttribute(
+            "aria-label",
+            `${title} — gameplay video ${index + 1}`
+          );
+          body.append(video);
+        });
+      }
+
+      const screenshots = items(project.screenshots)
+        .map(safeUrl)
+        .filter(Boolean);
+
+      if (screenshots.length) {
+        body.append(element("h4", "Screenshots"));
+        const gallery = element("div", "", "gallery");
+
+        screenshots.forEach((url, index) => {
+          const link = element("a");
+          link.href = url;
+          link.target = "_blank";
+          link.rel = "noopener noreferrer";
+          link.setAttribute(
+            "aria-label",
+            `Open ${title} screenshot ${index + 1} at full size`
+          );
+
+          const image = element("img");
+          image.src = url;
+          image.alt = `${title} — screenshot ${index + 1}`;
+          image.loading = "lazy";
+          image.decoding = "async";
+          link.append(image);
+          gallery.append(link);
+        });
+
+        body.append(gallery);
+      }
+
+      return body;
+    }
+
+    function renderProject(project, featured = false) {
+      const card = element(
+        "details", "", featured ? "project featured" : "project"
+      );
+      const summary = element("summary");
+      const title = project.title || "Untitled project";
+      const cover = element("div", "", "cover");
+      const coverUrl = items(project.screenshots)
+        .map(safeUrl)
+        .find(Boolean);
+
+      function showPlaceholder() {
+        cover.replaceChildren(
+          element("div", title, "placeholder")
+        );
+      }
+
+      if (coverUrl) {
+        const image = element("img");
+        image.src = coverUrl;
+        image.alt = "";
+        image.loading = featured ? "eager" : "lazy";
+        image.decoding = "async";
+        image.addEventListener("error", showPlaceholder, { once: true });
+        cover.append(image);
+      } else {
+        showPlaceholder();
+      }
+
+      const copy = element("div", "", "card-copy");
+
+      if (featured) {
+        copy.append(element("p", "Featured project", "eyebrow"));
+      }
+
+      const badges = element("div", "", "badges");
+      for (const value of [project.category, project.status]) {
+        if (value) badges.append(element("span", value, "badge"));
+      }
+
+      copy.append(element("h3", title), badges);
+
+      if (project.description) {
+        copy.append(element("p", project.description, "excerpt"));
+      }
+
+      copy.append(element("span", "", "toggle-label"));
+      summary.append(cover, copy);
+      card.append(summary);
+
+      let built = false;
+
+      card.addEventListener("toggle", () => {
+        if (!card.open) {
+          stopVideos(card);
+          return;
+        }
+
+        document.querySelectorAll(".project[open]").forEach(other => {
+          if (other !== card) {
+            stopVideos(other);
+            other.open = false;
+          }
+        });
+
+        if (!built) {
+          card.append(renderDetails(project));
+          built = true;
+        }
+
+        requestAnimationFrame(() => {
+          if (!card.open) return;
+          const top = card.getBoundingClientRect().top;
+          if (top < 0 || top > window.innerHeight - 100) {
+            card.scrollIntoView({ block: "start", behavior: "instant" });
+          }
+        });
+      });
+
       return card;
+    }
+
+    function renderSection(name, projects) {
+      const section = document.getElementById(`${name}-section`);
+      const grid = document.getElementById(`${name}-projects`);
+      const count = document.getElementById(`${name}-count`);
+
+      section.hidden = projects.length === 0;
+      count.textContent =
+        `${projects.length} project${projects.length === 1 ? "" : "s"}`;
+
+      grid.replaceChildren(...projects.map(project => {
+        const featured = name === "personal" &&
+          String(project.title || "").trim().toLowerCase() === "cold shelter";
+        return renderProject(project, featured);
+      }));
     }
 
     async function loadProjects() {
@@ -303,25 +544,45 @@
         });
 
         if (!response.ok) {
-          throw new Error(`Could not load portfolio.json: ${response.status}`);
+          throw new Error(`Could not load projects: ${response.status}`);
         }
 
         const data = await response.json();
-
         if (!Array.isArray(data.projects)) {
           throw new Error("portfolio.json must contain a projects array.");
         }
 
         const projects = data.projects.filter(project =>
-          project && typeof project === "object"
+          project && typeof project === "object" && !Array.isArray(project)
         );
 
-        container.replaceChildren(...projects.map(renderProject));
-        status.textContent = projects.length
+        const professional = projects.filter(project =>
+          project.group === "Professional"
+        );
+
+        const personal = projects.filter(project =>
+          project.group !== "Professional"
+        );
+
+        // Put Cold Shelter first; preserve the order of other entries.
+        const coldShelter = personal.findIndex(project =>
+          String(project.title || "").trim().toLowerCase() === "cold shelter"
+        );
+
+        if (coldShelter > 0) {
+          personal.unshift(personal.splice(coldShelter, 1)[0]);
+        }
+
+        renderSection("professional", professional);
+        renderSection("personal", personal);
+
+        loadStatus.textContent = projects.length
           ? ""
           : "Projects coming soon.";
+        loadStatus.hidden = projects.length > 0;
       } catch (error) {
-        status.textContent =
+        loadStatus.hidden = false;
+        loadStatus.textContent =
           "Projects could not be loaded. Please refresh or visit my itch.io page.";
         console.error(error);
       }
