@@ -72,7 +72,7 @@
       "description": "Isle of the Forsaken is a first-person, horror game that follows the story of a man stranded on a forsaken island trying to find his way back home.",
       "category": "Game jam",
       "status": "Released",
-      "contributions": "- Implemented environmental interactions, jumpscares, objectives, dialogues, AI behaviors, footsteps system and AI voiceovers\n- Designed the level layout and established its atmosphere through lighting and environmental details.",
+      "contributions": "- Implemented environmental interactions, jumpscares, objectives, dialogues, footsteps system and AI voiceovers\n- Developed enemy AI with roaming, player detection, pursuit, and attack states\n- Designed the level layout and established its atmosphere through lighting and environmental details.",
       "screenshots": [
         "images/T_XCo3-1.png",
         "images/KuUFVW-1.png",
@@ -86,7 +86,7 @@
       "description": "A 3D turn-based strategy prototype where you command a squad in grid-based battles against enemy AI. Spend each unit’s action points to move, attack, or interact with the environment, then end your turn and face the enemy’s response. Use positioning and tactical abilities to defeat the opposing team.",
       "category": "Game",
       "status": "Prototype",
-      "contributions": "- Implemented grid-based movement and pathfinding, unit management, action points, turn sequencing, and an action system for combat and world interactions\n- Implemented ragdoll functionality when units die and breakable crates",
+      "contributions": "- Implemented grid-based movement and pathfinding, unit management, action points, turn sequencing, and an action system for combat and world interactions\n- Implemented enemy AI that scores available actions and selects the highest-rated option each turn\n- Implemented ragdoll functionality when units die and breakable crates",
       "videos": [
         "images/2026-10-12 16-32-43.mp4"
       ]
