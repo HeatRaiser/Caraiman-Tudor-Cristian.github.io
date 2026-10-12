@@ -43,7 +43,7 @@
     },
     {
       "title": "Shut The Box",
-      "description": "A prototype inspired by the board game Shut the Box, featuring numbered tiles from 1 to 12. Roll the dice and close any combination of tiles that adds up to the total, aiming to close them all. A mouse-driven dice throw lets you drag to set the direction and release to roll, with longer drags adding more spin and power.",
+      "description": "A 3D prototype inspired by the board game Shut the Box, featuring numbered tiles from 1 to 12. Roll the dice and close any combination of tiles that adds up to the total, aiming to close them all. A mouse-driven dice throw lets you drag to set the direction and release to roll, with longer drags adding more spin and power.",
       "category": "Game",
       "status": "Prototype",
       "contributions": "- Implemented mouse-driven dice throwing, dice result detection, tile-selection validation, and scoring logic.",
@@ -57,7 +57,7 @@
     },
     {
       "title": "Isle of the Forsaken",
-      "description": "Isle of the Forsaken is a game that follows the story of a man stranded on a forsaken island trying to find his way back home.",
+      "description": "Isle of the Forsaken is a first-person, horror game that follows the story of a man stranded on a forsaken island trying to find his way back home.",
       "category": "Game jam",
       "status": "Released",
       "contributions": "- Implemented environmental interactions, jumpscares, objectives, dialogues, AI behaviors, footsteps system and AI voiceovers\n- Designed the level layout and established its atmosphere through lighting and environmental details.",
@@ -68,6 +68,19 @@
         "images/7hrYo5.png"
       ],
       "itch": "https://mololo.itch.io/isle-of-the-forsaken"
+    },
+    {
+      "title": "Whispers from the past",
+      "description": "Whispers from the past is a first-person, low-poly horror game follows the story of a broken father that did something horrible.",
+      "category": "Game jam",
+      "status": "Released",
+      "contributions": "- Implemented environmental interactions, objectives, dialogue and objects animations\n- Designed the level",
+      "screenshots": [
+        "images/fYz8h+.png",
+        "images/oUynUq.png",
+        "images/Z_IdL2.png"
+      ],
+      "itch": "https://heatdev.itch.io/whispers-from-the-past"
     }
   ]
 }
