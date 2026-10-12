@@ -6,7 +6,7 @@
       "category": "Game",
       "status": "Awaiting release",
       "role": "Solo Developer",
-      "contributions": "- Implemented gameplay systems for interactions, objectives, dialogue, puzzles, and jumpscares, supported by a reusable trigger-based event system.\n- Implemented enemy AI with roaming behaviour, chase encounters, and jumpscare events.\n- Implemented UI navigation and settings menus for graphics, audio, and general gameplay options.\n- Designed and built the entire game map.\n- Developed the game’s story.\n- Edited and integrated audio to support atmosphere and gameplay events.\n- Integrated third-party assets and adapted them to the game’s requirements.",
+      "contributions": "- Implemented gameplay systems for interactions, objectives, dialogue, puzzles, and jumpscares, supported by a reusable trigger-based event system\n- Implemented enemy AI with roaming behaviour, chase encounters, and jumpscare events\n- Implemented UI navigation and settings menus for graphics, audio, and general gameplay options\n- Designed and built the entire game map\n- Developed the game’s story\n- Edited and integrated audio to support atmosphere and gameplay events\n- Integrated third-party assets and adapted them to the game’s requirements",
       "screenshots": [
         "images/ColdShelter_2026-10-10_19-26-51-871_e095f2.png",
         "images/ColdShelter_2026-10-10_20-22-25-031_76efa3.png",
@@ -21,6 +21,24 @@
       ],
       "youtube": [
         "https://www.youtube.com/watch?v=GK0pv78cR2c"
+      ]
+    },
+    {
+      "title": "Bowling Madness",
+      "description": "Bowling Madness is a 3D isometric endless platformer where you guide a bowling ball through a generated obstacle course. Move your mouse to steer and control the force applied to the ball—the farther the cursor, the greater the force. Navigate hazards, use launchers and power-ups, and knock down pins at the end of each section to gain extra time. See how far you can get before the timer runs out.",
+      "category": "Prototype",
+      "status": "Prototype",
+      "role": "Solo Developer",
+      "contributions": "- Implemented a mouse-driven physics controller, timer, checkpoints, respawning, power-ups, and interactive obstacles with effects such as stunning, knockback, and launching\n- Used object pooling to recycle course sections, enabling endless generation\n- Designed all the course sections\n- Created all the assets used in this prototype using Blender",
+      "screenshots": [
+        "images/bowling-madness-1.png",
+        "images/Capture.png",
+        "images/Capture 4.png",
+        "images/Capture 2.png",
+        "images/Capture 3.png"
+      ],
+      "videos": [
+        "images/2026-10-12 14-04-08.mp4"
       ]
     }
   ]
