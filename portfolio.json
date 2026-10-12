@@ -109,6 +109,16 @@
         "images/2026-10-12 15-46-00.mp4"
       ],
       "itch": "https://heatdev.itch.io/circular-mayhem"
+    },
+    {
+      "title": "Farming Game",
+      "description": "A pixel-art farming prototype where you till soil, plant seeds, and water crops on a tile-based grid. A day–night cycle and daily crop growth create a simple routine of tending your farm and resting for the next day.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented player controls, crops logic, grid system and inventory system",
+      "videos": [
+        "images/2026-10-12 16-14-10.mp4"
+      ]
     }
   ]
 }
