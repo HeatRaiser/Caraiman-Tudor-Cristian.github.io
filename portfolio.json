@@ -178,6 +178,23 @@
         "images/2026-10-12 14-04-08.mp4"
       ],
       "group": "Professional"
+    },
+    {
+      "title": "Serenitale",
+      "description": "A 2D educational game designed to help children practice emotional regulation. Players follow a young character through everyday situations that trigger anger and frustration, with interactive breathing exercises based on techniques provided by children’s therapists.",
+      "category": "Game",
+      "status": "Prototype",
+      "contributions": "- Implemented character customization with unlockable options\n- Developed the level-selection interface and navigation\n- Integrated ElevenLabs-generated voiceovers with the dialogue system\n- Implemented interactive player actions within levels\n- Designed level layouts",
+      "screenshots": [
+        "images/Capture4-1.png",
+        "images/Capture2-2.png",
+        "images/Capture3-2.png",
+        "images/Capture-7.png"
+      ],
+      "videos": [
+        "images/2026-10-13 14-10-13.mp4"
+      ],
+      "group": "Professional"
     }
   ]
 }
