@@ -4,7 +4,7 @@
       "title": "Cold Shelter",
       "description": "Cold Shelter is a first-person horror game that takes place in a snow-covered forest. Your car breaks down during a snowstorm, leaving you stranded in the middle of nowhere. Find shelter, explore your surroundings, find help and make your way out of there. Escaping the cold is only the beginning. This game features a linear story, environmental interactions, immersive graphics,\ncreepy atmosphere and AI behaviors. The game was developed in Unity.",
       "category": "Game",
-      "status": "Awaiting release",
+      "status": "Released",
       "role": "Solo Developer",
       "contributions": "- Implemented gameplay systems for interactions, objectives, dialogue, puzzles, and jumpscares, supported by a reusable trigger-based event system\n-Implemented enemy AI with NavMesh-based navigation, roaming behaviour, chase encounters, and jumpscare events\n- Implemented UI navigation and settings menus for graphics, audio, and general gameplay options\n- Designed and built the entire game map\n- Developed the game’s story\n- Edited and integrated audio to support atmosphere and gameplay events\n- Integrated third-party assets and adapted them to the game’s requirements",
       "screenshots": [
@@ -21,7 +21,8 @@
       ],
       "youtube": [
         "https://www.youtube.com/watch?v=GK0pv78cR2c"
-      ]
+      ],
+      "steam": "https://store.steampowered.com/app/5336500/Cold_Shelter/"
     },
     {
       "title": "Battle Tanks",
